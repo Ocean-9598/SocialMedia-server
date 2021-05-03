@@ -18,6 +18,7 @@ const server = new ApolloServer({
         optionsSuccessStatus: 204,
         credentials: true
       },
+      playground:true,
     typeDefs,
     resolvers,
     context: ({ req }) => ({ req, pubsub })
